@@ -1,0 +1,72 @@
+.formlist{
+    margin: 80px 170px;
+    border: 2px solid rgba(88, 88, 88, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.formlist-title{
+    position: relative;
+}
+.formlist-title h1{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.formlist-title img{
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    z-index: -1;
+}
+
+.formlist-container{
+    display: flex;
+}
+
+.formlist-input{
+    display: flex;
+    gap: 40px;
+    background:#32323B;
+    padding: 20px 30px;
+    border-radius: 50px;
+    padding-right: 80px;
+}
+.formlist-input input{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-family: Outfit;
+    color: white;
+}
+
+.formlist-add{
+    font-size: 30px;
+    color: white;
+    padding: 20px 80px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.display{
+    padding: 20px 80px;
+}
+
+.display-title{
+   font-size: 30px;
+   font-family: Outfit;
+   color: white;
+   padding: 10px 280px;
+   background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    border-radius: 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,110 @@
+.todolist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 20px 170px;
+    border: 2px solid rgba(88, 88, 88, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+}
+.todolist-title{
+    position: relative;
+}
+
+.todolist-title h1{
+    padding: 0px 30px ;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.todolist-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.todolist-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+    font-size: 22px;
+}
+
+.todolist-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.todolist-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.todolist-right label{
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+}
+.todolist-right input{
+    border: none;
+    width: 650px;
+    height: 78px;
+    padding-left: 20px;
+    border-radius:4px;
+    background: #32323c;
+    color: white;
+    font-family: Outfit;
+    font-size: 20px;
+}
+.todolist-right textarea{
+    width: 650px;
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background:#32323c;
+    color: white;
+    font-size: 20px;
+    font-family: Outfit;
+}
+
+.todolist-submit{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415ff 100%);
+    font-size: 22px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    margin-left: 230px;
+}
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+    .todolist {
+        transform: scale(0.5); /* Reduces the size by 20% */
+        transform-origin: top left;
+        gap: 10px;
+        padding: 10px;
+    }
+    .todolist-right {
+        transform: scale(0.5);
+        gap: 10px;
+        padding: 10px;
+    }
+    .todolist-title {
+        transform: scale(0.5);
+        gap: 10px;
+        padding: 10px;
+    }
+}
